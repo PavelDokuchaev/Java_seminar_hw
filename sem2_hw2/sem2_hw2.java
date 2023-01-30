@@ -22,14 +22,14 @@ public class sem2_hw2 {
         String[] newStr = str.split(",");
 
         for (int i = 0; i < newStr.length; i++) {
-            String[] string3 = newStr[i].split(":");
-            if (!"null".equals(string3[1].trim())) {
+            String[] stringFinal = newStr[i].split(":");
+            if (!"null".equals(stringFinal[1].trim())) {
 
-                string.append(string3[0].trim()).append(" ").append("=").append(" ").append("'")
-                        .append(string3[1].trim())
+                string.append(stringFinal[0].trim()).append(" ").append("=").append(" ").append("'")
+                        .append(stringFinal[1].trim())
                         .append("'").append(" ");
             }
-            if (i < string3.length) {
+            if (i < stringFinal.length) {
                 string.append("and ");
             }
         }
